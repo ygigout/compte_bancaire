@@ -1,4 +1,5 @@
-# Word temporary file
+# Word temporary files
+~*.*
 *.tmp
 
 # Prerequisites
