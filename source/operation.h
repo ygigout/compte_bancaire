@@ -25,11 +25,11 @@ class Operation
         // Accesseurs
         void setDate(int);
         void setCode(CodeOperation);
-        void setMontant();
+        void setMontant(float);
 
         int getDate();
-        CodeOperation getCode();
-        float getMontant(float);
+        string getCode();
+        float getMontant();
 
         // Autres méthodes d'instance
         void afficher();

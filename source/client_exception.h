@@ -16,11 +16,9 @@ enum ErrClient { ERR_NOM_MAX, ERR_PRENOM_MAX, ERR_SEXE,
 class ClientException: public exception
 {
     private:
-//        string cause;
         ErrClient codeErr;
 
     public:
-//        ClientException(string msg) /* throw() */ : cause(cause)
         ClientException(ErrClient err) /* throw() */ : codeErr(err)
         {
         }

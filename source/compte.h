@@ -2,6 +2,8 @@
 #define COMPTE_H_INCLUDED
 
 #include <iostream>
+#include <vector>
+#include "operation.h"
 
 using namespace std;
 
@@ -13,6 +15,7 @@ class Compte
         int dateOuverture;
         float solde;
         float decouvertAutorise;
+        vector<Operation> operations;
 
     public:
         //Dé/constructeur
@@ -25,12 +28,13 @@ class Compte
         void setSolde(float);
         void setDecouvertAutorise(float);
 
-        int setNumero();
-        int setDateOuverture();
-        float setSolde();
-        float setDecouvertAutorise();
+        int getNumero();
+        int getDateOuverture();
+        float getSolde();
+        float getDecouvertAutorise();
 
         // Autres méthodes d'instance
+        void afficher();
         void afficherOperations();
 };
 
