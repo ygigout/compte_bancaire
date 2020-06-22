@@ -2,6 +2,7 @@
 #define ADRESSEPOSTALE_H_INCLUDED
 
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -16,11 +17,11 @@ class AdressePostale
 
     public:
         //Dé/constructeur
-//        Client(nom="\0", prenom="\0", sexe=Masculin, telephone="0000000000");
-//        ~Client();
+        AdressePostale(string="\0", string="\0", int=0, string="\0");
+        ~AdressePostale();
 
         // Accesseurs
-        void setlibelle(string);
+        void setLibelle(string);
         void setComplement(string);
         void setCodePostal(int);
         void setVille(string);
@@ -31,7 +32,7 @@ class AdressePostale
         string getVille();
 
         // Autres méthodes d'instance
-//        void afficher()
+        string toStr();
 };
 
 #endif // ADRESSEPOSTALE_H_INCLUDED

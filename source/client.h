@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "adressepostale.h"
+#include "client_exception.h"
 
 using namespace std;
 
@@ -17,28 +18,29 @@ class Client
         string prenom;
         Sexe sexe;
         string telephone;
-        AdressePostale adresse;
+        AdressePostale* adresse;
 
     public:
         //Dé/constructeur
-        Client(string="\0", string="\0", Sexe=Masculin, string="0000000000");
-        ~Client();
+        Client(string="\0", string="\0", Sexe=Masculin,
+               string="0000000000", AdressePostale* = nullptr);
+        virtual ~Client();
 
         // Accesseurs
         void setNom(string);
         void setPrenom(string);
         void setSexe(Sexe);
         void setTelephone(string);
-        void setAdresse(AdressePostale);
+        void setAdresse(AdressePostale*);
 
         string getNom();
         string getPrenom();
         Sexe getSexe();
         string getTelephone();
-        AdressePostale getAdresse();
+        AdressePostale* getAdresse();
 
         // Autres méthodes d'instance
-        void afficher();
+        virtual void afficher();
 };
 
 #endif // CLIENT_H_INCLUDED
