@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1592823088 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\adressepostale.cpp
+	"adressepostale.h"
+
+1592823626 c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\adressepostale.h
+	<iostream>
+
+1592823088 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\banque.cpp
+	"banque.h"
+
+1592823626 c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\banque.h
+	<iostream>
+
+1592823088 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\client.cpp
+	"client.h"
+
+1592823626 c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\client.h
+	<iostream>
+
+1592823089 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\compte.cpp
+	"compte.h"
+
+1592823626 c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\compte.h
+	<iostream>
+
+1592823088 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\operation.cpp
+	"operation.h"
+
+1592823626 c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\operation.h
+	<iostream>
+
+1592823088 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\particulier.cpp
+	"particulier.h"
+
+1592823626 c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\particulier.h
+	<iostream>
+
+1592823088 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\professionnel.cpp
+	"professionnel.h"
+
+1592823626 c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\professionnel.h
+	<iostream>
+
+1592823503 source:c:\users\yann\onedrive\bureau\projet c++\compte_bancaire\source\main.cpp
+	<iostream>
+
