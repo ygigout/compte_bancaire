@@ -1,6 +1,6 @@
 #include "adressepostale.h"
 
-////------------------ Dé/constructeur //------------------
+//------------------ Dé/constructeur ------------------
 AdressePostale::AdressePostale(string libelle, string complement, int codePostal, string ville)
 {
     this->setLibelle(libelle);
@@ -13,7 +13,7 @@ AdressePostale::~AdressePostale()
 {
 }
 
-////------------------ Accesseurs //------------------
+//------------------ Accesseurs ------------------
 void AdressePostale::setLibelle(string libelle) { this->libelle = libelle; }
 void AdressePostale::setComplement(string complement) { this->complement = complement; }
 void AdressePostale::setCodePostal(int codePostal) { this->codePostal = codePostal; }
@@ -25,7 +25,7 @@ int AdressePostale::getCodePostal() {return this->codePostal;}
 string AdressePostale::getVille() {return this->ville;}
 
 
-////------------------ Autres méthodes d'instance //------------------
+//------------------ Autres méthodes d'instance ------------------
 string AdressePostale::toStr()
 {
     ostringstream oss;

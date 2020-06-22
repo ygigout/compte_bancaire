@@ -35,7 +35,7 @@ class Client
 
         string getNom();
         string getPrenom();
-        Sexe getSexe();
+        string getSexe();
         string getTelephone();
         AdressePostale* getAdresse();
 

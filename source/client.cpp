@@ -77,9 +77,17 @@ string Client::getPrenom()
     return this->prenom;
 }
 
-Sexe Client::getSexe()
+string Client::getSexe()
 {
-    return this->sexe;
+    switch(this->sexe)
+    {
+        case Masculin:
+            return "Masculin";
+        case Feminin:
+            return "Feminin";
+        default:
+            return "<Sexe non determine !>";
+    }
 }
 
 string Client::getTelephone()

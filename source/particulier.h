@@ -19,14 +19,16 @@ class Particulier: public Client
 
     public:
         //Dé/constructeur
-        Particulier(string="\0", string="\0", Sexe=Masculin, string="0000000000",
+        Particulier(string="\0", string="\0", Sexe=Masculin,
+                    string="0000000000", AdressePostale* = nullptr,
                     SituationFamiale=Autre, int=0);
+        ~Particulier();
 
         // Accesseurs
         void setSituationFamiliale(SituationFamiale);
         void setDateNaissance(int);
 
-        SituationFamiale getSituationFamiliale();
+        string getSituationFamiliale();
         int getDateNaissance();
 
         // Autres méthodes d'instance
